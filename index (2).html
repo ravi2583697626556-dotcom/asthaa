@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>For Astha 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════
+     LOADING SCREEN
+═══════════════════════════ -->
+<div id="loader">
+  <div class="ld-heart">
+    <!-- Orbiting particles -->
+    <span class="orb">✨</span>
+    <span class="orb">🌸</span>
+    <span class="orb">💜</span>
+
+    <!-- Beating heart SVG -->
+    <svg class="ld-svg" viewBox="0 0 100 90" width="95" height="85"
+         xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="hgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#fff" stop-opacity=".98"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,.72)"/>
+        </linearGradient>
+      </defs>
+      <path d="M50 82 L9 43 C0 33 0 19 10 11 C19 3 33 4 41 12 L50 21 L59 12 C67 4 81 3 90 11 C100 19 100 33 91 43 Z"
+            fill="url(#hgrad)" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+      <!-- inner highlight line -->
+      <path d="M50 30 C50 30 30 20 22 25" stroke="rgba(255,255,255,.55)" stroke-width="2.5"
+            stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <p class="ld-text">Loading something special<span class="ld-dots"><span>.</span><span>.</span><span>.</span></span></p>
+
+  <div class="ld-bar-wrap">
+    <div class="ld-bar"></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════
+     FLOATING EMOJI SEA
+═══════════════════════════ -->
+<div id="emoji-sea"></div>
+
+
+<!-- ═══════════════════════════
+     MAIN PAGE
+═══════════════════════════ -->
+<main class="page">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+
+    <!-- Animated SVG Flower -->
+    <div class="flower-wrap">
+
+      <!-- Spinning outer dot ring -->
+      <svg class="ring-svg" viewBox="-110 -110 220 220" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100"  cy="0"    r="6"  fill="#ff9ed8" opacity=".7"/>
+        <circle cx="71"   cy="71"   r="5"  fill="#d0a8ff" opacity=".6"/>
+        <circle cx="0"    cy="100"  r="6"  fill="#7dd3fc" opacity=".7"/>
+        <circle cx="-71"  cy="71"   r="5"  fill="#ff9ed8" opacity=".6"/>
+        <circle cx="-100" cy="0"    r="6"  fill="#d0a8ff" opacity=".7"/>
+        <circle cx="-71"  cy="-71"  r="5"  fill="#7dd3fc" opacity=".6"/>
+        <circle cx="0"    cy="-100" r="6"  fill="#ff9ed8" opacity=".7"/>
+        <circle cx="71"   cy="-71"  r="5"  fill="#d0a8ff" opacity=".6"/>
+      </svg>
+
+      <!-- Bloom flower SVG -->
+      <svg viewBox="-90 -90 180 180" width="190" height="190"
+           xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="pg1" cx="50%" cy="30%">
+            <stop offset="0%" stop-color="#ffb3d9"/>
+            <stop offset="100%" stop-color="#ff6eb4"/>
+          </radialGradient>
+          <radialGradient id="pg2" cx="50%" cy="30%">
+            <stop offset="0%" stop-color="#d8b4fe"/>
+            <stop offset="100%" stop-color="#a855f7"/>
+          </radialGradient>
+          <radialGradient id="pg3" cx="50%" cy="30%">
+            <stop offset="0%" stop-color="#bae6fd"/>
+            <stop offset="100%" stop-color="#38bdf8"/>
+          </radialGradient>
+          <radialGradient id="cg"  cx="38%" cy="32%">
+            <stop offset="0%" stop-color="#fef3c7"/>
+            <stop offset="100%" stop-color="#f59e0b"/>
+          </radialGradient>
+        </defs>
+
+        <!-- 8 petals, alternating 3 colors, entrance anim via group -->
+        <g class="bloom-group">
+          <!-- Outer petals -->
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg1)" opacity=".88" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg2)" opacity=".85" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg3)" opacity=".88" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg1)" opacity=".85" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg2)" opacity=".88" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg3)" opacity=".85" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg1)" opacity=".88" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-44" rx="14" ry="32" fill="url(#pg2)" opacity=".85" transform="rotate(315)"/>
+
+          <!-- Inner shorter petals (45° offset) -->
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(22)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(67)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(112)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(157)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(202)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(247)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(292)"/>
+          <ellipse cx="0" cy="-26" rx="9" ry="20" fill="white" opacity=".5" transform="rotate(337)"/>
+
+          <!-- Center glow circle -->
+          <circle cx="0" cy="0" r="26" fill="url(#cg)" class="center-glow"/>
+
+          <!-- Inner sparkle stars (counter-spin so they stay upright) -->
+          <g class="counter-spin">
+            <g class="star-g" transform="translate(0,-11)">
+              <polygon points="0,-7 1.8,-2.4 6.7,-2.4 3,1 4.5,6.5 0,3.6 -4.5,6.5 -3,1 -6.7,-2.4 -1.8,-2.4"
+                       fill="white" opacity=".95"/>
+            </g>
+            <g class="star-g" transform="translate(9,6)">
+              <polygon points="0,-5 1.3,-1.7 4.8,-1.7 2.2,0.8 3.2,4.7 0,2.6 -3.2,4.7 -2.2,0.8 -4.8,-1.7 -1.3,-1.7"
+                       fill="white" opacity=".8"/>
+            </g>
+            <g class="star-g" transform="translate(-9,6)">
+              <polygon points="0,-5 1.3,-1.7 4.8,-1.7 2.2,0.8 3.2,4.7 0,2.6 -3.2,4.7 -2.2,0.8 -4.8,-1.7 -1.3,-1.7"
+                       fill="white" opacity=".8"/>
+            </g>
+            <g class="star-g" transform="translate(0,12)">
+              <polygon points="0,-4 1,-1.3 3.8,-1.3 1.7,0.6 2.5,3.7 0,2 -2.5,3.7 -1.7,0.6 -3.8,-1.3 -1,-1.3"
+                       fill="white" opacity=".65"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <p class="hero-badge">✦ made for my fav insta bestie ✦</p>
+    <h1 class="hero-name">Astha!</h1>
+    <p class="hero-tagline" id="tagline"><span class="caret"></span></p>
+    <div class="scroll-hint" title="scroll down!">💫</div>
+  </section>
+
+
+  <!-- ── TRAIT CARDS ── -->
+  <section class="cards-sec reveal">
+    <h2 class="sec-head">what makes you, YOU 🌟</h2>
+    <div class="cards-grid">
+      <div class="tcard" onclick="burst(event)">
+        <span class="tcard-emoji">🥰</span>
+        <div class="tcard-title">So Sweet</div>
+        <p class="tcard-desc">Talking to you feels like warm sunshine — always kind, always gentle.</p>
+      </div>
+      <div class="tcard" onclick="burst(event)">
+        <span class="tcard-emoji">💬</span>
+        <div class="tcard-title">Best Talks</div>
+        <p class="tcard-desc">Our chats never have a dull moment. Hours pass and it still feels short!</p>
+      </div>
+      <div class="tcard" onclick="burst(event)">
+        <span class="tcard-emoji">🛋️</span>
+        <div class="tcard-title">Comfort Zone</div>
+        <p class="tcard-desc">You became my safe space without even trying — that's the rarest thing.</p>
+      </div>
+      <div class="tcard" onclick="burst(event)">
+        <span class="tcard-emoji">📱</span>
+        <div class="tcard-title">Insta Bestie</div>
+        <p class="tcard-desc">Instagram did us a huge favour the day it put us in each other's path!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── MESSAGE ── -->
+  <section class="msg-sec reveal">
+    <div class="msg-box">
+      <span class="msg-icon">💌</span>
+      <h2 class="msg-head">Hey Astha 🌸</h2>
+      <p class="msg-body">
+        We might've started as just a follow on Instagram, but in no time you became
+        someone I genuinely look forward to talking to every single day. ✨<br><br>
+        You're sweet, you're real, and honestly — you make things better just by being
+        yourself. Thanks for being my comfort zone, my random-3am-convo buddy,
+        and just a really lovely human. Here's to all the late-night chats still to come 💕
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ── BUTTON ── -->
+  <div class="btn-sec reveal">
+    <button class="love-btn" id="loveBtn" onclick="sendLove(event)">
+      Send her some love 💝
+    </button>
+  </div>
+
+  <footer>
+    Made with <span class="hrt">♥</span> and way too many emojis
+  </footer>
+
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
